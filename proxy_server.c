@@ -41,7 +41,7 @@ pthread_t tid[MAX_CLIENTS];         //array to store the thread ids of clients
 sem_t seamaphore;	                //if client requests exceeds the max_clients this seamaphore puts the
                                     //waiting threads to sleep and wakes them when traffic on queue decreases
 //sem_t cache_lock;			       
-pthread_mutex_t lock;               //lock is used for locking the cache
+pthread_mutex_t lock;               //lock is used for Locking the cache
 
 
 cache_element* head;                //pointer to the cache
